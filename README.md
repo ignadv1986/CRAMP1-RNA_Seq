@@ -35,4 +35,24 @@ The whole processing was performed on R (v4.2.1) using packaged from Bioconducto
 
 - **GraphPad Prism:** for figure preparation
 
+## Workflow
+
+1. **Gene-level count generation:**
+   - Feature counts generated from '.bam' files using `Rsubread::featureCounts` with GENCODE v41 GTF annotation (GRCh38 reference genome).
+   - Paired-end reads and exon-level counting were specified.
+2. **Metadata generation:**
+   - Organization of sample data into a matrix for downstream gene expression analysis.
+   - Count matrices from different matrices were merged.
+3. **Differential gene expression analysis:**
+   - Performed with DESeq2.
+   - WT vs KO cells of each cell line were compared. 
+4. **Shrinkage of log2 fold changes:**
+   - apeglm was used to shrink log2 fold changes for improved accuracy and visualization.
+5. **Definition of differentially-expressed genes (DEGs):**
+    - The threshold for DEGs was set at log2 fold change > 1.5 and an adjusted p-value for false discovery rate lower than 0.05.
+6. **Gene annotation:**
+    - Gene symbols were retrieved using the biomaRt package, querying Ensembl (Ensembl v106).
+7. **Visualization:**
+    - Files showing histone expression were exported and plotted with GraphPad Prism.
+
 
