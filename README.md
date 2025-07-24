@@ -21,7 +21,7 @@ The whole processing was performed on R (v4.2.1) using packaged from Bioconducto
 
 **Note:** Sequencing, quality check and mapping of the initial sequences were carried out by the sequencing platform. Briefly, samples were processed using the nf-core/rna-seq pipeline branch (v.3.10.1), trimmed with Trim Galore! (v.0.6.7) and mapped to the human genome (GRCh38) using STAR (v. 2.6.1b), generating the files in .bam format that are the starting point of this project.
 
-## Tools
+## Tools and softwares
 - **R** (v4.2.1)
 
 - **Bioconductor packages:**
@@ -53,4 +53,8 @@ The whole processing was performed on R (v4.2.1) using packaged from Bioconducto
 7. **Visualization:**
     - Files showing histone expression were exported and plotted with GraphPad Prism.
 
+## Results
 
+- RNA-Seq profiles from WT and KO cells show profound differences.
+- Despite localizing to HLBs, CRAMP1 controls the expression of only the linker histone H1, but its knock-out has no effect on core histone levels.
+- CRAMP1 controls the expression of most H1 isoforms, even the replication-independent H1.0 and H1.X, which are transcribed outside of HLBs.
