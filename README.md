@@ -1,6 +1,6 @@
 # CRAMP1-RNA_Seq
 
-Analysis of RNA-Seq samples derived from U2OS and HeLa cells, both wild-type (WT) and CRAMP1-knockout (KO).
+Analysis of RNA-Seq samples derived from U2OS wild-type (WT) and CRAMP1-knockout (KO) cells.
 
 ## Background
 
@@ -9,12 +9,10 @@ Further investigation revealed that CRAMP1 localizes to subnuclear structures kn
 
 ## Project overview
 
-Here we will cover the workflow used to process RNA-Seq samples generated from the following 4 human cancer cell lines:
+Here we will cover the workflow used to process RNA-Seq samples generated from the following human cancer cell lines:
 
-- U2OS wild-type (U2OS WT)
-- U2OS CRAMP1-knockout (U2OS KO)
-- HeLa wild-type (HeLa WT)
-- HeLa CRAMP1-knockout (HeLa KO)
+- U2OS wild-type, from now on referred to as "WT".
+- U2OS CRAMP1-knockout (U2OS KO), noted onwards with "KO".
 
 The main goal of the project is to investigate a possible role of the CRAMP1 protein in histone expression.
 Details on how the samples were generated can be found in the original publication:  
